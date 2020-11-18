@@ -1,5 +1,5 @@
 node_modules/
-*.lock
+.lock
 .vim/plugged
 .DS_Store
 .netrwhist
