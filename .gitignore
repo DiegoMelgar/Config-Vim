@@ -1,5 +1,4 @@
 node_modules/
-autoload/
 .vim/plugged
 .DS_Store
 .netrwhist
