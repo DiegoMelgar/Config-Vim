@@ -1,2 +1,5 @@
 node_modules/
-autoload/
+.lock
+.vim/plugged
+.DS_Store
+.netrwhist
