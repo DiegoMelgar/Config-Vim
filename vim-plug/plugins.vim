@@ -17,18 +17,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
  " status bar
  Plug 'maximbaz/lightline-ale'
  Plug 'itchyny/lightline.vim'
-	" Plug 'vim-airline/vim-airline'
-	" Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
  " Themes
- " Plug 'morhetz/gruvbox'
+  " Plug 'morhetz/gruvbox'
   Plug 'shinchu/lightline-gruvbox.vim'
   Plug 'joshdick/onedark.vim'
-
- " Tree
+  
+" Tree
  Plug 'scrooloose/nerdtree'
  Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
  Plug 'voldikss/vim-floaterm'
+
 
  " typing
  Plug 'alvan/vim-closetag'
@@ -42,7 +43,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
  " autocomplete
  " Plug 'sirver/ultisnips'
  Plug 'honza/vim-snippets', {'for': ['sh','python','markdown']}
- Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'mattn/emmet-vim'
 
  " test
 " Plug 'tyewang/vimux-jest-test'
@@ -58,6 +60,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
  Plug 'mhinz/vim-signify'
  Plug 'scrooloose/nerdcommenter'
  Plug 'tpope/vim-commentary'
+
+ "Live Server
+ " Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 
  " git
  Plug 'tpope/vim-fugitive'

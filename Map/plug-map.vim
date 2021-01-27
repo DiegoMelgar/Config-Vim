@@ -6,8 +6,8 @@ nnoremap <Leader>T :TestFile<CR>
 nnoremap <Leader>TT :TestSuite<CR>
 
 " split resize
-"nnoremap <Leader>> 10<C-w>>
-"nnoremap <Leader>< 10<C-w><
+nnoremap <Leader>> 10<C-w>>
+nnoremap <Leader>< 10<C-w><
 
 nnoremap <M-j>    :resize +2<CR>
 nnoremap <M-k>    :resize -2<CR>
@@ -32,7 +32,8 @@ map <Leader>df :Ag<CR>
 "ESC
 inoremap jk <ESC>
 inoremap kj <ESC>
- 
+
+
 "CoC
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -51,8 +52,8 @@ map <Leader>l :tabnext<cr>
 map <Leader>bu :Buffers<cr>
 
 " faster scrolling
-nnoremap <silent> <C-e> 10<C-e>
-nnoremap <silent> <C-y> 10<C-y>
+nnoremap <silent> <C-n> 10<C-n>
+nnoremap <silent> <C-m> 10<C-m>
 nmap <Leader>s <Plug>(easymotion-s2)
 
 nnoremap <Leader>G :G<cr>
@@ -60,6 +61,14 @@ nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
 nnoremap <Leader>no :!node %<cr>
+nnoremap <Leader>py :!python %<cr>
+
+" " Use <c-space> to trigger completion.
+" if &filetype == "javascript" || &filetype == "python"
+"   inoremap <c-space> <C-x><C-u>
+" else
+"   inoremap <silent><expr> <c-space> coc#refresh()
+" endif
 
 set splitright
 function! OpenTerminal()
@@ -98,9 +107,9 @@ endfunction
 nnoremap <C-t> :call OpenTerminal()<CR> 
 
 " TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
+" nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
+" nnoremap <S-TAB> :bprevious<CR>
 "TAB completion
 " Use <Tab> and <S-Tab> for navigate completion list                            
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<S-tab>"                        
@@ -109,7 +118,7 @@ inoremap <expr> <C-Tab> pumvisible() ? "\<C-p>" : "\<C-tab>"
 nmap <Leader>p <Plug>(Prettier) 
 
 " Use alt + h resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
+nnoremap <M-j>    :resize +2<CR>
+nnoremap <M-k>    :resize -2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
